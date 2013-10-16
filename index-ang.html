@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app='books'>
+  <head>
+    <title>Bookstore CMS prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    .book-old-price {text-decoration:line-through;}
+    .book-price {font-weight: bold; color: green;}
+    .book-discount {white-space:nowrap; display: block;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/ng-app.js"></script>
+  </head>
+  <body ng-controller="BookStoreCtrl" ng-init="init()">
+    <div class="container">
+      <h1>Bookstore CMS Prototype - angular way!</h1>
+
+      <h2>New book</h2>
+      <form class="new-book-form form-horizontal" novalidate name="book_form" ng-submit = 'saveBook()'>
+          <div class="control-group">
+            <label for="id_title" class="control-label input-small">Name</label>
+            <div class="controls"><input id="id_title" ng-required="true" ng-model="book.title" name="title" type="text" class="input-xxlarge" />
+            <div class='error' ng-show = "book_form.title.$dirty && book_form.title.$error.required">Title is required</div>
+
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_author" class="control-label">Author</label>
+            <div class="controls"><input id="id_author" ng-required="true" ng-model="book.author" name="author" type="text" />
+            <div class='error' ng-show = "book_form.author.$dirty && book_form.author.$error.required">Author is required</div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_description" class="control-label">Description</label>
+            <div class="controls"><textarea id="id_description" ng-required="true" ng-model="book.description" class="input-xxlarge" name="description" rows="2" cols="80"></textarea>
+            <div class='error' ng-show = "book_form.description.$dirty && book_form.description.$error.required">Description is required</div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_category" class="control-label">Category</label>
+            <div class="controls">
+              <select id="id_category" ng-options='k as v for (k,v) in categories' name="category" ng-model="book.category"></select>
+            <div class='error' ng-show = "book_form.category.$dirty && book_form.category.$error.required">Category is required</div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_price" class="control-label">Price</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="number" step="any" min='0' id="id_price" ng-required="true" class="input-mini" name="price" ng-model="book.price"/>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="control-group">
+            <label for="id_quantity" class="control-label">Quantity</label>
+            <div class="controls"><input type="number" min='0' ng-required="true" id="id_quantity" ng-model="book.quantity" class="input-mini" name="quantity" value="15" /></div>
+          </div>
+          <div class="control-group">
+
+            <div class="controls">
+              <div class='error' ng-show="book_form.$invalid" >All fields are required</div>
+              </div>
+            <div class="controls">
+              <button type="submit" ng-hide='book._id' ng-disabled="book_form.$invalid" class="btn btn-primary">Add new book</button>
+            
+              <button type="submit" ng-show='book._id' ng-disabled="book_form.$invalid" class="btn btn-primary">Save book</button>
+            
+              <a ng-show='book._id' class="btn btn-warning" ng-click="cancelEdit()">Cancel</a>
+            </div>
+          </div>
+      </form>
+
+      <h2>Storage</h2>
+      <form action="" class="form-search">
+        <input type="text" name="query" class="search-query" placeholder="Search" ng-model='search_query' ng-change='updateBooks()' />
+      </form>
+
+      <table class="table table-bordered">
+        <tbody class="books-container">
+          <tr class="book" ng-repeat="book in visibleBooks">
+            <td class="row">
+              <div class="span2 text-center">
+                <img class="book-image" ng-src="{{book.image|defaultImage}}" width="128" alt="" />
+                <ul class="muted unstyled">
+                  <li>Category: <span class="book-category">{{categories[book.category]}}</span></li>
+                  <li>In stock: <span class="book-quantity">{{book.quantity}}</span></li>
+                </ul>
+                <button type="button" class="btn btn-danger btn-small book-delete" ng-click="delete(book)">Delete</button>
+                &nbsp;<button type="button" class="btn btn-small book-edit" ng-click='edit(book)'>Edit</button>
+              </div>
+              <div class="span7">
+                <p><em class="book-author">{{book.author}}</em></p>
+                <p><strong class="book-title">{{book.title}}</strong></p>
+                <p class="book-description">{{book.description}}</p>
+              </div>
+            </td>
+            <td>
+              <span class="book-old-price muted" ng-show='book.discount'>{{book.price|currency}}</span> 
+              <big class="book-price">{{book.price-book.discount|currency}}</big> 
+              <small class="book-discount" ng-show='book.discount'>(discount <span class="book-discount-value">{{book.discount | currency}}</span>)</small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

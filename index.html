@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Bookstore CMS prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    .book-old-price {text-decoration:line-through;}
+    .book-price {font-weight: bold; color: green;}
+    .book-discount {white-space:nowrap; display: block;}
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="data/books.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bookstore CMS Prototype</h1>
+
+      <h2>New book</h2>
+      <form class="new-book-form form-horizontal">
+          <div class="control-group">
+            <label for="id_title" class="control-label input-small">Name</label>
+            <div class="controls"><input id="id_title" name="title" type="text" class="input-xxlarge" /></div>
+          </div>
+          <div class="control-group">
+            <label for="id_author" class="control-label">Author</label>
+            <div class="controls"><input id="id_author" name="author" type="text" /></div>
+          </div>
+          <div class="control-group">
+            <label for="id_description" class="control-label">Description</label>
+            <div class="controls"><textarea id="id_description" class="input-xxlarge" name="description" rows="2" cols="80"></textarea></div>
+          </div>
+          <div class="control-group">
+            <label for="id_category" class="control-label">Category</label>
+            <div class="controls">
+              <select id="id_category" name="category">
+                <option value="literature">Literature</option>
+                <option value="cookbook">Cookbook</option>
+                <option value="computers">Computers</option>
+                <option value="business">Business</option>
+                <option value="science">Science</option>
+                <option value="fantasy">Sci-Fi and Fantasy</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_price" class="control-label">Price</label>
+            <div class="controls">
+              <div class="input-prepend">
+                <span class="add-on">$</span>
+                <input type="text" id="id_price" class="input-mini" name="price" value="10.00" />
+              </div>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="id_quantity" class="control-label">Quantity</label>
+            <div class="controls"><input type="text" id="id_quantity" class="input-mini" name="quantity" value="15" /></div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">Add new book</button>
+            </div>
+          </div>
+      </form>
+
+      <h2>Storage</h2>
+      <form action="" class="form-search">
+        <input type="text" name="query" class="search-query" placeholder="Search" />
+      </form>
+
+      <table class="table table-bordered">
+        <tbody class="books-container">
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1196 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ng-in",
+				"ng-init	AngularJS"
+			],
+			[
+				"attac",
+				"attacked"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"ng-c",
+				"ng-click	AngularJS"
+			],
+			[
+				"ng-re",
+				"ng-repeat"
+			],
+			[
+				"spell",
+				"spell_effects"
+			],
+			[
+				"respo",
+				"respond_with"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ele",
+				"angular.element	AngularJS"
+			],
+			[
+				"Look",
+				"LooksSearch"
+			],
+			[
+				"$sta",
+				"$stateParams"
+			],
+			[
+				"pay",
+				"pay-buttons"
+			],
+			[
+				"templa",
+				"template"
+			],
+			[
+				"get",
+				"getTime"
+			],
+			[
+				"sor",
+				"sort_order"
+			],
+			[
+				"ng-",
+				"ng-change	AngularJS"
+			],
+			[
+				"ng-sw",
+				"ng-switch-when	AngularJS"
+			],
+			[
+				"ngw",
+				"ng-switch	AngularJS"
+			],
+			[
+				"enemy",
+				"enemyTurn"
+			],
+			[
+				"msg",
+				"msg_choice"
+			],
+			[
+				"slo",
+				"slots_used"
+			],
+			[
+				"add",
+				"add_combatant"
+			],
+			[
+				"batt",
+				"battle"
+			],
+			[
+				"max",
+				"max-width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/work/sr5/assets/controllers/lobby.coffee",
+			"settings":
+			{
+				"buffer_size": 902,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var _ = require('underscore')\n\n/*\n * GET home page.\n */\n\nexports.index = function(req, res){\n  res.render('index', { title: 'Express' });\n};\n\nexports.lobby = function(req,res){\n	if(!req.session.user){\n		res.redirect('/')\n	}else{\n		res.render('lobby', {user: req.session.user, users: global.loggedInUsers});\n	}\n}\n\nexports.lobby_users = function(req,res){\n	users = _.filter(loggedInUsers, function(u){})\n	res.send({result:users});\n}",
+			"file": "/D/work/sr5/routes/index.js",
+			"file_size": 450,
+			"file_write_time": 130262585924342764,
+			"settings":
+			{
+				"buffer_size": 430,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index-ang.html",
+			"settings":
+			{
+				"buffer_size": 5113,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 1575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 692,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/ng-app.js",
+			"settings":
+			{
+				"buffer_size": 1869,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/sr5/views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 731,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"syn co",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/work/sr5/.gitignore",
+		"/D/work/sr5/assets/controllers/welcome.coffee",
+		"/D/work/sr5/assets/controllers/lobby.coffee",
+		"/D/work/sr5/assets/controllers/app.js",
+		"/D/work/sr5/app.js",
+		"/D/work/sr5/public/stylesheets/style.less",
+		"/D/work/sr5/assets/vendor/underscore-min.js",
+		"/D/work/sr5/routes/fights.coffee",
+		"/D/work/sr5/routes/index.js",
+		"/D/work/sr5/views/lobby.ejs",
+		"/D/work/sr5/public/javascripts/application.js",
+		"/D/work/sr5/package.json",
+		"/D/work/sr5/node_modules/asset-rack/node_modules/pkgcloud/node_modules/utile/lib/index.js",
+		"/D/work/sr4/app/controllers/fight_requests_controller.rb",
+		"/D/work/sr4/app/assets/javascripts/services/battle.js",
+		"/D/work/sr4/app/assets/stylesheets/fights.css.scss",
+		"/D/work/sralki-rails/app/assets/javascripts/services/battle.js",
+		"/D/work/sr4/app/models/spell.rb",
+		"/D/work/sr4/app/views/fights/show.html.erb",
+		"/D/work/sr4/config/routes.rb",
+		"/D/work/sr4/app/views/profiles/_form.html.erb",
+		"/D/work/sr4/app/views/profiles/show.html.erb",
+		"/D/work/sr4/app/controllers/profiles_controller.rb",
+		"/D/work/sr4/app/controllers/fights_controller.rb",
+		"/D/work/sr4/Gemfile",
+		"/D/work/sr4/app/models/fight.rb",
+		"/D/work/instadate-webclient/node_modules/restler/index.js",
+		"/D/work/sb2/bresponzive/single-event.php",
+		"/D/work/sb2/bresponzive/taxonomy-event-category.php",
+		"/D/work/sr4/app/models/profile.rb",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/can.coffee",
+		"/D/work/sr4/app/models/user.rb",
+		"/D/work/sr4/app/serializers/spell_serializer.rb",
+		"/D/work/sr4/app/serializers/fight_serializer.rb",
+		"/D/work/sb2/bresponzive/single.php",
+		"/D/work/sb2/bresponzive/style.css",
+		"/D/work/sb2/bresponzive/event-meta-event-single.php",
+		"/D/work/sr4/app/assets/javascripts/controllers/app.js",
+		"/D/work/sr4/app/controllers/lobby_controller.rb",
+		"/D/work/sr4/app/assets/javascripts/fights.js.coffee",
+		"/D/work/sr4/test/models/fight_test.rb",
+		"/D/work/sr4/app/views/fight_requests/show.html.erb",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Profile/User.coffee",
+		"/D/work/sr4/app/models/team.rb",
+		"/D/work/instadate-webclient/package.json",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Profile/edit/ProfileEditPopup.coffee",
+		"/D/work/instadate-webclient/auth_real.coffee",
+		"/C/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-3.0.3/README.md",
+		"/D/work/mechta-back/app/users/views.py",
+		"/D/work/mechta-back/app/facecontrol/views.py",
+		"/D/work/sralki/public/javascripts/app.js",
+		"/D/work/sralki/public/javascripts/services/battle.js",
+		"/D/work/sr4/app/views/lobby/index.html.erb",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Profile/edit/ProfileEditForm.coffee",
+		"/D/work/sr4/app/assets/javascripts/application.js",
+		"/D/work/sr4/app/assets/javascripts/fight_requests.js.coffee",
+		"/D/work/instadate-webclient/assets/js/app/modules/Landing/LandingPage.coffee",
+		"/D/work/instadate-webclient/assets/js/app/modules/Landing/LoginForm.coffee",
+		"/D/work/sr4/app/models/fight_request.rb",
+		"/D/work/sr4/db/migrate/20130923111643_create_teams.rb",
+		"/D/work/sr4/db/migrate/20130923111059_create_fight_requests.rb",
+		"/D/work/sralki/app.js",
+		"/D/work/sralki/views/login.ejs",
+		"/D/work/sr4/app/controllers/welcome_controller.rb",
+		"/D/work/am/static/js/app/controllers/LookCtrl.js",
+		"/D/work/sr4/app/views/welcome/index.html.erb",
+		"/D/work/sr4/app/assets/stylesheets/welcome.css.scss",
+		"/D/work/am/static/js/app/routes.js",
+		"/D/work/sralki-rails/app/assets/javascripts/app.js",
+		"/D/work/sralki-rails/app/assets/javascripts/application.js",
+		"/D/work/sralki/views/index.ejs",
+		"/D/work/sralki-rails/Gemfile",
+		"/D/work/sralki-rails/config/initializers/secret_token.rb",
+		"/D/work/sralki-rails/config/application.rb",
+		"/D/work/sralki-rails/config/routes.rb",
+		"/D/work/sralki-rails/app/views/battle/view.html.erb",
+		"/D/work/sralki-rails/app/assets/javascripts/controllers/BattleCtrl.js",
+		"/C/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/devise-3.0.3/app/helpers/devise_helper.rb",
+		"/D/work/sralki/public/stylesheets/style.less",
+		"/D/work/sralki/package.json",
+		"/D/work/am/static/js/app/templates/look.tpl.html",
+		"/D/work/am/app/looks/constants.py",
+		"/D/work/am/static/js/app/templates/sidebar.tpl.html",
+		"/D/work/am/app/looks/forms.py",
+		"/D/work/am/static/js/models.js",
+		"/D/work/am/static/js/app/templates/looks.tpl.html",
+		"/D/work/am/static/js/app/services/LooksSearch.js",
+		"/D/work/am/app/looks/views.py",
+		"/D/work/am/static/js/app/controllers/LooksCtrl.js",
+		"/D/work/am/templates/looks/index.html",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Top/Top.coffee",
+		"/D/work/instadate-webclient/assets/js/moder/ModerTask.user_photos.hbs",
+		"/D/work/instadate-webclient/assets/js/moder/ModerTask.hbs",
+		"/D/work/instadate-webclient/views/moder.html",
+		"/D/work/instadate-webclient/assets/js/moder/moder.coffee",
+		"/D/work/instadate-webclient/assets/css/cakes.less",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/MainView/Router.coffee",
+		"/D/work/instadate-webclient/assets/css/promo.less",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/MainView/templates/CakesPopup.hbs",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/MainView/CakesPopup.coffee",
+		"/D/work/instadate-webclient/assets/components/bootstrap/js/bootstrap-popover.js",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Promo/Bomb.coffee",
+		"/D/work/instadate-webclient/assets/js/moder/ModerTask.facecontrols.hbs",
+		"/D/work/instadate-webclient/assets/js/app/modules/Common/Util.coffee",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/MainView/templates/popups/bomb_success.hbs",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Promo/templates/promo_popup.hbs",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Promo/templates/bomb.hbs",
+		"/D/work/am/static/js/libs/angular-slider.js",
+		"/D/work/am/static/js/libs/ui-bootstrap-custom-tpls-0.3.0.js",
+		"/D/work/am/static/js/libs/ui-bootstrap-custom-tpls-0.5.0.js",
+		"/D/work/instadate-webclient/mobile/js/src/Search.coffee",
+		"/D/work/instadate-webclient/mobile/js/src/Router.coffee",
+		"/D/work/instadate-webclient/assets/js/locale_ru.coffee",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Profile/edit/templates/ProfileSettingsForm.hbs",
+		"/D/work/instadate-webclient/assets/js/search.coffee",
+		"/D/work/instadate-webclient/assets/js/app/modules/Front/Profile/edit/ProfileSettingsForm.coffee",
+		"/D/work/am/static/js/libs/jquery-ui-1.10.3.custom.js",
+		"/D/work/am/static/js/libs/angular-slider.min.js",
+		"/D/work/sralki/views/layout.jade",
+		"/D/work/am/app/looks/models.py",
+		"/D/work/am/config.py",
+		"/C/Sites/sralki-mongo/app/assets/javascripts/app.coffee",
+		"/D/work/am/app/__init__.py",
+		"/D/work/am/__init__.py",
+		"/D/work/am/test.html",
+		"/D/work/am/static/css/main.css",
+		"/D/work/am/app/moder/views.py",
+		"/D/work/am/app/looks/func.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\work\\instadate-webclient\\assets\\js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id",
+			"a",
+			"button",
+			"getDiscount(book)",
+			"\">",
+			"<option value=\"",
+			"'<",
+			"'",
+			"div",
+			"require",
+			"@profile.",
+			"label",
+			"me.",
+			"damage",
+			"m.effect",
+			"data",
+			"h4",
+			"csrf",
+			"s",
+			":user",
+			"int",
+			"$e.user",
+			"regSmetana",
+			"input",
+			"valida",
+			"path",
+			"});\n",
+			"approved",
+			"WebService",
+			"rest",
+			"\\\"",
+			"email",
+			"new_message",
+			"checkLength",
+			"checkM",
+			"срусл",
+			"finish",
+			"Оказаться",
+			"scope.enemy",
+			"scope",
+			"enemy_of",
+			"$stateParams",
+			"\n    ",
+			"filters",
+			"loadPage",
+			"loadP",
+			"var",
+			"filters",
+			"ranges",
+			"const",
+			"(",
+			"const",
+			"ng-model",
+			":",
+			"=",
+			"= ",
+			"$scope.",
+			"const",
+			">\n",
+			"loadPage",
+			"$parent.",
+			"btn-warning",
+			"\\\"",
+			"\\\"\\\"",
+			"\"\\\\\"",
+			"\\\"\\\"",
+			"\\\\",
+			"&quot;",
+			"\\\"",
+			"{{",
+			"item",
+			"+",
+			"'",
+			"div",
+			"LooksCtrl",
+			"src=",
+			"loadPage",
+			"settings",
+			"last_req_date",
+			"bomp_success",
+			"api",
+			"settings",
+			"selBub",
+			"bindHtml",
+			"Age",
+			"direc",
+			"_change",
+			"change",
+			"bind",
+			"initForm",
+			"init",
+			"()",
+			"sort_order",
+			"speed",
+			"status",
+			"msg.effect",
+			"me",
+			"/faye",
+			"Server",
+			"available",
+			"percent",
+			"app",
+			"sizing",
+			"resource",
+			"rd",
+			"port",
+			"180",
+			"90",
+			"placekitten",
+			"http://placekitten.com/90/180",
+			"50",
+			"user",
+			"li",
+			"button",
+			"field",
+			"fiels",
+			"boot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"\\",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/work/sr5/assets/controllers/lobby.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 902,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								705,
+								705
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/work/sr5/routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index-ang.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								767,
+								767
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "README.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/ng-app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1097,
+								1097
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "/D/work/sr5/views/index.ejs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.897270487505,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "js-ass.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rou",
+				"sr4\\config\\routes.rb"
+			],
+			[
+				"routes.rb",
+				"sr4\\config\\routes.rb"
+			],
+			[
+				"spell",
+				"sr4\\app\\models\\spell.rb"
+			],
+			[
+				"user.r",
+				"sr4\\app\\models\\user.rb"
+			],
+			[
+				"profile",
+				"sr4\\app\\models\\profile.rb"
+			],
+			[
+				"fight.rb",
+				"sr4\\app\\models\\fight.rb"
+			],
+			[
+				"show",
+				"sr4\\app\\views\\fights\\show.html.erb"
+			],
+			[
+				"fight_co",
+				"sr4\\app\\controllers\\fights_controller.rb"
+			],
+			[
+				"sr4battle.js",
+				"sr4\\app\\assets\\javascripts\\services\\battle.js"
+			],
+			[
+				"batt",
+				"sralki-rails\\app\\assets\\javascripts\\services\\battle.js"
+			],
+			[
+				"fight_",
+				"sr4\\test\\models\\fight_test.rb"
+			],
+			[
+				"routes",
+				"sr4\\config\\routes.rb"
+			],
+			[
+				"user.rb",
+				"sr4\\app\\models\\user.rb"
+			],
+			[
+				"user",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Profile\\User.coffee"
+			],
+			[
+				"lobby/ind",
+				"sr4\\app\\views\\lobby\\index.html.erb"
+			],
+			[
+				"team",
+				"sr4\\app\\models\\team.rb"
+			],
+			[
+				"fight",
+				"sr4\\app\\models\\fight.rb"
+			],
+			[
+				"lobby/i",
+				"sr4\\app\\views\\lobby\\index.html.erb"
+			],
+			[
+				"profileed",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Profile\\edit\\ProfileEditForm.coffee"
+			],
+			[
+				"landing",
+				"instadate-webclient\\assets\\js\\app\\modules\\Landing\\LoginForm.coffee"
+			],
+			[
+				"restler",
+				"instadate-webclient\\node_modules\\restler\\index.js"
+			],
+			[
+				"welcome/in",
+				"sr4\\app\\views\\welcome\\index.html.erb"
+			],
+			[
+				"welcome",
+				"sr4\\app\\assets\\stylesheets\\welcome.css.scss"
+			],
+			[
+				"index.html.",
+				"sr4\\app\\views\\welcome\\index.html.erb"
+			],
+			[
+				"gemfil",
+				"sralki-rails\\Gemfile"
+			],
+			[
+				"top.co",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Top\\Top.coffee"
+			],
+			[
+				"vie",
+				"am\\app\\looks\\views.py"
+			],
+			[
+				"moder.co",
+				"instadate-webclient\\assets\\js\\moder\\moder.coffee"
+			],
+			[
+				"modertask",
+				"instadate-webclient\\assets\\js\\moder\\ModerTask.hbs"
+			],
+			[
+				"cakes",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\MainView\\templates\\CakesPopup.hbs"
+			],
+			[
+				"moderta",
+				"instadate-webclient\\assets\\js\\moder\\ModerTask.hbs"
+			],
+			[
+				"moder",
+				"instadate-webclient\\views\\moder.html"
+			],
+			[
+				"bomb",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Promo\\templates\\bomb.hbs"
+			],
+			[
+				"util",
+				"instadate-webclient\\assets\\js\\app\\modules\\Common\\Util.coffee"
+			],
+			[
+				"router",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\MainView\\Router.coffee"
+			],
+			[
+				"cakespop",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\MainView\\templates\\CakesPopup.hbs"
+			],
+			[
+				"promo.",
+				"instadate-webclient\\assets\\css\\promo.less"
+			],
+			[
+				"bomb.",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Promo\\templates\\bomb.hbs"
+			],
+			[
+				"bp",
+				"instadate-webclient\\assets\\components\\bootstrap\\js\\bootstrap-popover.js"
+			],
+			[
+				"promo",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Promo\\templates\\promo_popup.hbs"
+			],
+			[
+				"loo",
+				"am\\static\\js\\app\\controllers\\LooksCtrl.js"
+			],
+			[
+				"angular-sli",
+				"am\\static\\js\\libs\\angular-slider.js"
+			],
+			[
+				"searc",
+				"instadate-webclient\\assets\\js\\search.coffee"
+			],
+			[
+				"route",
+				"instadate-webclient\\mobile\\js\\src\\Router.coffee"
+			],
+			[
+				"user.coffee",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Profile\\User.coffee"
+			],
+			[
+				"loca",
+				"instadate-webclient\\assets\\js\\locale_ru.coffee"
+			],
+			[
+				"bomb_su",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\MainView\\templates\\popups\\bomb_success.hbs"
+			],
+			[
+				"profilese",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Profile\\edit\\templates\\ProfileSettingsForm.hbs"
+			],
+			[
+				"prosettings",
+				"instadate-webclient\\assets\\js\\app\\modules\\Front\\Profile\\edit\\ProfileSettingsForm.coffee"
+			],
+			[
+				"sea",
+				"instadate-webclient\\mobile\\js\\src\\Search.coffee"
+			],
+			[
+				"util.coff",
+				"instadate-webclient\\assets\\js\\app\\modules\\Common\\Util.coffee"
+			],
+			[
+				"inde",
+				"am\\templates\\looks\\index.html"
+			],
+			[
+				"index",
+				"am\\templates\\looks\\index.html"
+			],
+			[
+				"model",
+				"am\\app\\looks\\models.py"
+			],
+			[
+				"app",
+				"sralki-mongo\\app\\assets\\javascripts\\app.coffee"
+			],
+			[
+				"c",
+				"am\\config.py"
+			],
+			[
+				"ini",
+				"am\\__init__.py"
+			],
+			[
+				"_",
+				"am\\__init__.py"
+			],
+			[
+				"con",
+				"am\\config.py"
+			],
+			[
+				"func",
+				"am\\app\\looks\\func.py"
+			],
+			[
+				"looks/vie",
+				"am\\app\\looks\\views.py"
+			],
+			[
+				"view",
+				"am\\app\\moder\\views.py"
+			],
+			[
+				"init_sc",
+				"am\\scripts\\_init_scripts.py"
+			],
+			[
+				"moder.",
+				"am\\app\\moder\\func.py"
+			],
+			[
+				"conf",
+				"am\\config.py"
+			],
+			[
+				"mixi",
+				"am\\lib\\mixins.py"
+			],
+			[
+				"ba",
+				"sralki-mongo\\app\\controllers\\battles_controller.rb"
+			],
+			[
+				"hom",
+				"sralki-mongo\\app\\controllers\\home_controller.rb"
+			],
+			[
+				"comba",
+				"sralki-mongo\\app\\models\\combatant.rb"
+			],
+			[
+				"battle",
+				"sralki-mongo\\app\\models\\battle.rb"
+			],
+			[
+				"battle.",
+				"sralki-mongo\\app\\models\\battle.rb"
+			],
+			[
+				"home",
+				"sralki-mongo\\app\\controllers\\home_controller.rb"
+			],
+			[
+				"mess",
+				"sralki-mongo\\app\\models\\message.rb"
+			],
+			[
+				"rout",
+				"sralki-mongo\\config\\routes.rb"
+			],
+			[
+				"ui",
+				"sralki-mongo\\public\\gumby\\ui.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\work\\sr5\\sralki.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
