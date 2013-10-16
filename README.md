@@ -1,4 +1,4 @@
-UI developer test answers
+# UI developer test answers #
 
 
 Part 0 - Estimation
@@ -18,11 +18,12 @@ The mongo db server is required to run this app.
 
 to import existing books to the mongo use command:
 
-mongoimport --collection books --db ipontest --file data/books.js --jsonArray
+`mongoimport --collection books --db ipontest --file data/books.js --jsonArray`
  
 to run server go to the root and run 
 
-npm install
-node server
+`npm install`
+
+`node server`
 
 the page will be available at the http://localhost:3030
